@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    stage('hi') {
+            steps {
+                echo 'how are you'
+            }
+        }
+    stage('SCM') {
+            steps {
+                git 'https://github.com/Narendra1new/enterprice.git'
+            }
+        } 
+    }
+}
