@@ -7,5 +7,10 @@ pipeline {
                 echo 'Hello World'
             }
         }
+    stage('Hi') {
+           steps {
+               echo 'H0w are you'
+            }
+        }
     }
 }
